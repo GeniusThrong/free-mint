@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "http://geniusthrong.com/dapptest/static/css/main.5538efb1.chunk.css",
-    "main.js": "http://geniusthrong.com/dapptest/static/js/main.b4eda3cd.chunk.js",
-    "main.js.map": "http://geniusthrong.com/dapptest/static/js/main.b4eda3cd.chunk.js.map",
-    "runtime-main.js": "http://geniusthrong.com/dapptest/static/js/runtime-main.e556e8b4.js",
-    "runtime-main.js.map": "http://geniusthrong.com/dapptest/static/js/runtime-main.e556e8b4.js.map",
-    "static/js/2.7eb43d31.chunk.js": "http://geniusthrong.com/dapptest/static/js/2.7eb43d31.chunk.js",
-    "static/js/2.7eb43d31.chunk.js.map": "http://geniusthrong.com/dapptest/static/js/2.7eb43d31.chunk.js.map",
-    "static/js/3.1414eae9.chunk.js": "http://geniusthrong.com/dapptest/static/js/3.1414eae9.chunk.js",
-    "static/js/3.1414eae9.chunk.js.map": "http://geniusthrong.com/dapptest/static/js/3.1414eae9.chunk.js.map",
-    "index.html": "http://geniusthrong.com/dapptest/index.html",
-    "static/css/main.5538efb1.chunk.css.map": "http://geniusthrong.com/dapptest/static/css/main.5538efb1.chunk.css.map",
-    "static/js/2.7eb43d31.chunk.js.LICENSE.txt": "http://geniusthrong.com/dapptest/static/js/2.7eb43d31.chunk.js.LICENSE.txt",
-    "static/media/reset.css": "http://geniusthrong.com/dapptest/static/media/font.617a0a92.woff"
+    "main.css": "https://geniusthrong.com/dapptest/static/css/main.680ba642.chunk.css",
+    "main.js": "https://geniusthrong.com/dapptest/static/js/main.b4eda3cd.chunk.js",
+    "main.js.map": "https://geniusthrong.com/dapptest/static/js/main.b4eda3cd.chunk.js.map",
+    "runtime-main.js": "https://geniusthrong.com/dapptest/static/js/runtime-main.b235c1a2.js",
+    "runtime-main.js.map": "https://geniusthrong.com/dapptest/static/js/runtime-main.b235c1a2.js.map",
+    "static/js/2.4871c7b3.chunk.js": "https://geniusthrong.com/dapptest/static/js/2.4871c7b3.chunk.js",
+    "static/js/2.4871c7b3.chunk.js.map": "https://geniusthrong.com/dapptest/static/js/2.4871c7b3.chunk.js.map",
+    "static/js/3.1414eae9.chunk.js": "https://geniusthrong.com/dapptest/static/js/3.1414eae9.chunk.js",
+    "static/js/3.1414eae9.chunk.js.map": "https://geniusthrong.com/dapptest/static/js/3.1414eae9.chunk.js.map",
+    "index.html": "https://geniusthrong.com/dapptest/index.html",
+    "static/css/main.680ba642.chunk.css.map": "https://geniusthrong.com/dapptest/static/css/main.680ba642.chunk.css.map",
+    "static/js/2.4871c7b3.chunk.js.LICENSE.txt": "https://geniusthrong.com/dapptest/static/js/2.4871c7b3.chunk.js.LICENSE.txt",
+    "static/media/reset.css": "https://geniusthrong.com/dapptest/static/media/font.617a0a92.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.e556e8b4.js",
-    "static/js/2.7eb43d31.chunk.js",
-    "static/css/main.5538efb1.chunk.css",
+    "static/js/runtime-main.b235c1a2.js",
+    "static/js/2.4871c7b3.chunk.js",
+    "static/css/main.680ba642.chunk.css",
     "static/js/main.b4eda3cd.chunk.js"
   ]
 }
