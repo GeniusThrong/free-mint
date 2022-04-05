@@ -175,11 +175,8 @@ function App() {
   };
 
   const getConfig = async () => {
-    const configResponse = await fetch("https://geniusthrong.com/dapptest/config/config.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
+    const configResponse = await fetch("http://geniusthrong.com/dapptest/config/config.json", {
+    
     });
     const config = await configResponse.json();
     SET_CONFIG(config);

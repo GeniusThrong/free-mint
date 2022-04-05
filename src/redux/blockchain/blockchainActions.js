@@ -34,18 +34,12 @@ const updateAccountRequest = (payload) => {
 export const connect = () => {
   return async (dispatch) => {
     dispatch(connectRequest());
-    const abiResponse = await fetch("https://geniusthrong.com/dapptest/config/abi.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
+    const abiResponse = await fetch("http://geniusthrong.com/dapptest/config/abi.json", {
+     
     });
     const abi = await abiResponse.json();
-    const configResponse = await fetch("https://geniusthrong.com/dapptest/config/config.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
+    const configResponse = await fetch("http://geniusthrong.com/dapptest/config/config.json", {
+     
     });
     const CONFIG = await configResponse.json();
     const { ethereum } = window;
