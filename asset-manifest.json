@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.915c833a.chunk.css",
-    "main.js": "./static/js/main.b4eda3cd.chunk.js",
-    "main.js.map": "./static/js/main.b4eda3cd.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.207b343c.js",
-    "runtime-main.js.map": "./static/js/runtime-main.207b343c.js.map",
-    "static/js/2.6cf9aae5.chunk.js": "./static/js/2.6cf9aae5.chunk.js",
-    "static/js/2.6cf9aae5.chunk.js.map": "./static/js/2.6cf9aae5.chunk.js.map",
-    "static/js/3.1414eae9.chunk.js": "./static/js/3.1414eae9.chunk.js",
-    "static/js/3.1414eae9.chunk.js.map": "./static/js/3.1414eae9.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.915c833a.chunk.css.map": "./static/css/main.915c833a.chunk.css.map",
-    "static/js/2.6cf9aae5.chunk.js.LICENSE.txt": "./static/js/2.6cf9aae5.chunk.js.LICENSE.txt",
-    "static/media/reset.css": "./static/media/font.617a0a92.woff"
+    "main.css": "http://geniusthrong.com/dapptest/static/css/main.5538efb1.chunk.css",
+    "main.js": "http://geniusthrong.com/dapptest/static/js/main.b4eda3cd.chunk.js",
+    "main.js.map": "http://geniusthrong.com/dapptest/static/js/main.b4eda3cd.chunk.js.map",
+    "runtime-main.js": "http://geniusthrong.com/dapptest/static/js/runtime-main.e556e8b4.js",
+    "runtime-main.js.map": "http://geniusthrong.com/dapptest/static/js/runtime-main.e556e8b4.js.map",
+    "static/js/2.7eb43d31.chunk.js": "http://geniusthrong.com/dapptest/static/js/2.7eb43d31.chunk.js",
+    "static/js/2.7eb43d31.chunk.js.map": "http://geniusthrong.com/dapptest/static/js/2.7eb43d31.chunk.js.map",
+    "static/js/3.1414eae9.chunk.js": "http://geniusthrong.com/dapptest/static/js/3.1414eae9.chunk.js",
+    "static/js/3.1414eae9.chunk.js.map": "http://geniusthrong.com/dapptest/static/js/3.1414eae9.chunk.js.map",
+    "index.html": "http://geniusthrong.com/dapptest/index.html",
+    "static/css/main.5538efb1.chunk.css.map": "http://geniusthrong.com/dapptest/static/css/main.5538efb1.chunk.css.map",
+    "static/js/2.7eb43d31.chunk.js.LICENSE.txt": "http://geniusthrong.com/dapptest/static/js/2.7eb43d31.chunk.js.LICENSE.txt",
+    "static/media/reset.css": "http://geniusthrong.com/dapptest/static/media/font.617a0a92.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.207b343c.js",
-    "static/js/2.6cf9aae5.chunk.js",
-    "static/css/main.915c833a.chunk.css",
+    "static/js/runtime-main.e556e8b4.js",
+    "static/js/2.7eb43d31.chunk.js",
+    "static/css/main.5538efb1.chunk.css",
     "static/js/main.b4eda3cd.chunk.js"
   ]
 }
