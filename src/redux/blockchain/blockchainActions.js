@@ -34,11 +34,11 @@ const updateAccountRequest = (payload) => {
 export const connect = () => {
   return async (dispatch) => {
     dispatch(connectRequest());
-    const abiResponse = await fetch("/config/abi.json", {
+    const abiResponse = await fetch("http://geniusthrong.com/dapptest/config/abi.json", {
      
     });
     const abi = await abiResponse.json();
-    const configResponse = await fetch("/config/config.json", {
+    const configResponse = await fetch("http://geniusthrong.com/dapptest/config/config.json", {
      
     });
     const CONFIG = await configResponse.json();
