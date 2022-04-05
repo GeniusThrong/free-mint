@@ -175,7 +175,7 @@ function App() {
   };
 
   const getConfig = async () => {
-    const configResponse = await fetch("http://geniusthrong.com/dapptest/config/config.json", {
+    const configResponse = await fetch("https://geniusthrong.com/dapptest/config/config.json", {
     
     });
     const config = await configResponse.json();
