@@ -15,7 +15,7 @@ export const StyledButton = styled.button`
   background-color: var(--secondary);
   padding: 10px;
   font-weight: bold;
-  color: var(--secondary-text);
+  color: var(--btn-text);
   width: 100px;
   cursor: pointer;
   box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
@@ -68,7 +68,8 @@ export const ResponsiveWrapper = styled.div`
 export const StyledLogo = styled.img`
   width: 200px;
   @media (min-width: 767px) {
-    width: 300px;
+    width: 450px;
+    margin-top: 40px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -76,8 +77,8 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
-  background-color: var(--accent);
+  border: 4px dashed var(--border);
+  background-color: var(--box-bg);
   border-radius: 100%;
   width: 200px;
   @media (min-width: 900px) {
@@ -99,7 +100,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [feedback, setFeedback] = useState(`Click on Claim to get your Genius Denizen NFT for free!`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -139,13 +140,13 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
+        setFeedback("Sorry, something went wrong please try again later");
         setClaimingNft(false);
       })
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -175,9 +176,10 @@ function App() {
   };
 
   const getConfig = async () => {
-    const configResponse = await fetch("https://geniusthrong.com/free-mint/config/config.json", {
-    
-    });
+    const configResponse = await fetch(
+      "https://geniusthrong.com/free-mint/config/config.json",
+      {}
+    );
     const config = await configResponse.json();
     SET_CONFIG(config);
   };
@@ -210,10 +212,10 @@ function App() {
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
+              backgroundColor: "var(--box-bg)",
               padding: 24,
               borderRadius: 24,
-              border: "4px dashed var(--secondary)",
+              border: "4px dashed var(--border)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
@@ -243,7 +245,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  The sale has ended.
+                  The sale has ended
                 </s.TextTitle>
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
@@ -261,13 +263,13 @@ function App() {
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
+                  {CONFIG.NETWORK.SYMBOL}
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  Excluding gas fees*
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -357,7 +359,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY"}
+                        {claimingNft ? "BUSY" : "CLAIM"}
                       </StyledButton>
                     </s.Container>
                   </>
@@ -385,7 +387,7 @@ function App() {
           >
             Please make sure you are connected to the right network (
             {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+            Once you claim the NFT, you cannot undo this action.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
