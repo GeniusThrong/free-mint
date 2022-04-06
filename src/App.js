@@ -163,8 +163,8 @@ function App() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 10) {
-      newMintAmount = 10;
+    if (newMintAmount > 1) {
+      newMintAmount = 1;
     }
     setMintAmount(newMintAmount);
   };
@@ -232,7 +232,7 @@ function App() {
             <s.TextDescription
               style={{
                 textAlign: "center",
-                color: "var(--primary-text)",
+                color: "var(--accent-text)",
               }}
             >
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
@@ -378,11 +378,11 @@ function App() {
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+        <s.Container jc={"center"} ai={"center"} style={{ width: "50%" }}>
           <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--primary-text)",
+              color: "var(--footer-text)",
             }}
           >
             Please make sure you are connected to the right network (
@@ -393,7 +393,7 @@ function App() {
           <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--primary-text)",
+              color: "var(--footer-text)",
             }}
           >
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
